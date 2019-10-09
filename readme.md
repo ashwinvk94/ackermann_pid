@@ -9,7 +9,7 @@ A PID based controller for an ackermann steering system. A simulation of the ack
 
 ## Agile Iterative Process
 
-[![Agile Iterative Process google sheets document]](https://docs.google.com/spreadsheets/d/1OC-UdeI0B-3x7UZrUb_SEa5TkO0w30IA12mvkQLu_Fg/edit#gid=0)
+[Agile Iterative Process google sheets document](https://docs.google.com/spreadsheets/d/1OC-UdeI0B-3x7UZrUb_SEa5TkO0w30IA12mvkQLu_Fg/edit#gid=0)
 
 
 ## Standard install via command-line
