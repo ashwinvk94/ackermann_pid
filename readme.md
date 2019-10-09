@@ -1,4 +1,4 @@
-# C++ Boilerplate
+# PID Controller for PID
 [![Build Status](https://travis-ci.org/ashwinvk94/ackermann_pid.svg?branch=master)](https://travis-ci.org/ashwinvk94/ackermann_pid)
 [![Coverage Status](https://coveralls.io/repos/github/ashwinvk94/ackermann_pid/badge.svg?branch=master)](https://coveralls.io/github/ashwinvk94/ackermann_pid?branch=master)
 ---
