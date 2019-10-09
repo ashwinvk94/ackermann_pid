@@ -4,23 +4,39 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>290</y>
-      <w>320</w>
-      <h>140</h>
+      <x>500</x>
+      <y>270</y>
+      <w>310</w>
+      <h>340</h>
     </coordinates>
     <panel_attributes>&lt;&lt;class&gt;&gt;
 pid
 --
+- kp : double
+- ki : double
+- kd : double
+- prevError : double
+- errorSum : double
+- prevTime : double
 
---</panel_attributes>
+--
++ pid() : void
++ pid(double,double,double) : void
++ compute(double) : double
++ setkp(double) : void
++ setki(double) : void
++ setkd(double) : void
++ getkp() : double
++ getki() : double
++ getkd() : double
++ reset() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>200</x>
-      <y>290</y>
+      <x>280</x>
+      <y>270</y>
       <w>190</w>
       <h>90</h>
     </coordinates>
@@ -34,16 +50,21 @@ ackerman_controller
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>290</y>
-      <w>120</w>
-      <h>80</h>
+      <x>50</x>
+      <y>270</y>
+      <w>180</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>&lt;&lt;class&gt;&gt;
 ackerman_sim
 --
-
---</panel_attributes>
+posX : double
+posY : double
+steeringAng : double
+wheelVel : double
+prevTime : double
+--
+compute(double,double) : void</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
