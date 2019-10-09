@@ -1,4 +1,4 @@
-# PID Controller for PID
+# PID Controller for Ackermann Steering
 [![Build Status](https://travis-ci.org/ashwinvk94/ackermann_pid.svg?branch=master)](https://travis-ci.org/ashwinvk94/ackermann_pid)
 [![Coverage Status](https://coveralls.io/repos/github/ashwinvk94/ackermann_pid/badge.svg?branch=master)](https://coveralls.io/github/ashwinvk94/ackermann_pid?branch=master)
 ---
@@ -11,6 +11,13 @@ A PID based controller for an ackermann steering system. A simulation of the ack
 
 [Agile Iterative Process google sheets document](https://docs.google.com/spreadsheets/d/1OC-UdeI0B-3x7UZrUb_SEa5TkO0w30IA12mvkQLu_Fg/edit#gid=0)
 
+## Install UMLet
+```
+[Download UMlet files](https://www.umlet.com/download/umlet_14_3/umlet-standalone-14.3.0.zip)
+unzip umlet-standalone-14.3.0.zip
+cd Umlet
+Run program: java -jar umlet.jar 
+```
 
 ## Standard install via command-line
 ```
