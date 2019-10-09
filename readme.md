@@ -5,10 +5,7 @@
 
 ## Overview
 
-Simple starter C++ project with:
-
-- cmake
-- googletest
+A PID based controller for an ackermann steering system. A simulation of the ackermann model is also included to test the controller.
 
 ## Standard install via command-line
 ```
