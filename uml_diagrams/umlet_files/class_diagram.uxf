@@ -65,13 +65,19 @@ dt : double
       <x>0</x>
       <y>336</y>
       <w>532</w>
-      <h>119</h>
+      <h>189</h>
     </coordinates>
     <panel_attributes>&lt;&lt;class&gt;&gt;
 ackerman_controller
 --
 - baseline : double
 - carLen : double
+- radius : double
+- theta_Left : double
+- theta_Right :double 
+- rWheelVel : double 
+- lWheelVel : double
+- steeAng : double 
 --
 + compute(headingFeedback : double) : steerAng : double, rWheelVel : double, lWheelVel : double
 + changeSetpoints(headingsp : double,velocitysp : double) : void
