@@ -1,64 +1,65 @@
 /**
  * @file pid.cpp
- * @author Ashwin Vargheese Kuruttukulam
+ * @author Ashwin Varghese Kuruttukulam
  * @author Charan Karthikeyan
- * @brief Defines a PID Controller that computes the
- * heading angle for the target heading and point from
- * the current heading and point.
- * @Copyright "Copyright 2019 <Ashwin Vargheese Kuruttukulam>
+ *
+ * @brief Defines a PID Controller from the feedback/measured value
+ * and the setpoint. The output of the PID is calculated as per the equation
+ * output = Kp*Error + Ki*ErrorSum*dt + Kp*(Error-prevError)/dt
+ *
+ * @Copyright "Copyright 2019 <Ashwin Varghese Kuruttukulam>
  * @Copyright "Copyright 2019 <Charan Karthikeyan>
  */
 
 #include "pid.hpp"
 
-pid::pid(){
+pid::pid() {
 
 }
 
-pid::~pid(){
+pid::~pid() {
 
 }
 
-void pid::pid(double kp, double ki, double kd){
+void pid::pid(double kp, double ki, double kd) {
 
 }
-double pid::compute(double feedback){
-
-}
-
-void pid::setSp(double setPoint){
+double pid::compute(double feedback) {
 
 }
 
-void pid::setkp(double kp){
+void pid::setSp(double setPoint) {
 
 }
 
-void pid::setki(double ki){
+void pid::setkp(double kp) {
 
 }
 
-void pid::setkd(double kd){
+void pid::setki(double ki) {
 
 }
 
-double pid::getSp(){
-
-}
-double pid::getkp(){
+void pid::setkd(double kd) {
 
 }
 
-double pid::getki(){
+double pid::getSp() {
+
+}
+double pid::getkp() {
 
 }
 
-double pid::getkd(){
+double pid::getki() {
 
 }
 
-void pid::reset(){
+double pid::getkd() {
 
 }
 
+void pid::reset() {
+
+}
 
