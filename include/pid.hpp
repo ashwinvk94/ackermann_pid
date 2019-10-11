@@ -16,7 +16,7 @@
 
 class pid {
  private:
-  double kp, ki, kd, prevError, errorSum, prevTime, dtMode;
+  double kp, ki, kd, prevError, errorSum, prevTime, dtMode,dtVal;
   double setPoint;
  public:
   /**
@@ -85,7 +85,7 @@ class pid {
    * @param set the value of time change(dtVal).
    * return None.
    */
-  void setdt(double dtVal);
+  void setdt();
 
   /**
    * @brief Function to set the value of setPoint for the target heading
