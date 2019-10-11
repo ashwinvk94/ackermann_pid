@@ -49,6 +49,6 @@ class ackerman_controller{
    * @param velocity of the set point(velocitysp)
    * @return None.
    */
-  void changeSetpoints(double headingsp, double velocitysp);
+  void changeSetPoints(double headingsp, double velocitysp);
 };
 
