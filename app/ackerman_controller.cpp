@@ -18,7 +18,7 @@ void ackerman_controller::calcWheelVel(){
 
 }
 
-double ackerman_controller::compute(double headingFeedback){
+double ackerman_controller::compute(double headingFeedback , double &rWheelVel, double &lWheelVel){
 
 }
 
