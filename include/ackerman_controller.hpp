@@ -14,25 +14,21 @@
 
 class ackerman_controller{
  private:
-  double baseline,carLen, radius, theta_Left,theta_Right, rWheelVel,lWheelVel, steerAng;
+  double baseline,carLen, radius, rWheelVel,lWheelVel, steerAng;
 
   /**
    * @brief Function to calculate the Radius of the turn given an angle
+   * Formula : radius = carLen * tan(steerAng)
    * @param None.
    * @return None.
    */
   void calcRadius();
 
   /**
-   * @brief Function to calculate the Wheel angle of the ackerman steering
-   * @param None.
-   * return None.
-   */
-  void calcWheelAng();
-
-  /**
    * brief Function to calculate the wheel velocity of each wheel
    * and the velocity of the overall system
+   * Formula : lWheelVel = velocitysp * (1-(baseline/2*radius))
+   * Formula : rWheelVel = veocitysp * (1+(baseline/2*radius))
    * @param None.
    * @return None.
    */
