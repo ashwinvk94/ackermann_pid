@@ -14,10 +14,6 @@ void ackerman_controller::calcRadius(){
 
 }
 
-void ackerman_controller::calcWheelAng(){
-
-}
-
 void ackerman_controller::calcWheelVel(){
 
 }
@@ -26,6 +22,6 @@ double ackerman_controller::compute(double headingFeedback){
 
 }
 
-void ackerman_controller::changeSetpoints(double headingsp,double velocitysp){
+void ackerman_controller::changeSetPoints(double headingsp,double velocitysp){
 
 }
