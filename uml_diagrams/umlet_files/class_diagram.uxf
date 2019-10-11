@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>553</x>
-      <y>126</y>
+      <y>140</y>
       <w>245</w>
       <h>329</h>
     </coordinates>
@@ -48,7 +48,7 @@ pid
     <id>UMLClass</id>
     <coordinates>
       <x>7</x>
-      <y>140</y>
+      <y>154</y>
       <w>525</w>
       <h>105</h>
     </coordinates>
@@ -68,7 +68,7 @@ ackerman_sim
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>252</y>
+      <y>266</y>
       <w>532</w>
       <h>189</h>
     </coordinates>
@@ -78,16 +78,15 @@ ackerman_controller
 - baseline : double
 - carLen : double
 - radius : double
-- theta_Left : double
-- theta_Right :double 
 - rWheelVel : double 
 - lWheelVel : double
-- steeAng : double 
+- steeAng : double
+- velocitysp : double
+- headingsp : double
 --
-+ compute(headingFeedback : double) : steerAng : double, rWheelVel : double, lWheelVel : double
++ compute(headingFeedback : double, &amp;rWheelVel : double, &amp;lWheelVel : double,) : steerAng : double
 + changeSetpoints(headingsp : double,velocitysp : double) : void
 - calcRadius() : void
-- calcWheelAng() : void
 - calcWheelVel() : void</panel_attributes>
     <additional_attributes/>
   </element>
