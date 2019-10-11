@@ -15,15 +15,11 @@ pid::pid() {
 
 }
 
-pid::pid() {
+pid::pid(double kp, double ki, double kd,bool dtMode) {
 
 }
 
 pid::~pid() {
-
-}
-
-void pid::pid(double kp, double ki, double kd) {
 
 }
 
