@@ -151,11 +151,25 @@ class pid {
   double getki();
 
   /**
+   * @brief Function to return the value of the error sum and test purposes
+   * @param None.
+   * @return Error sum value(errorSum)
+   */
+  double getErrorSum();
+
+  /**
    * @brief returns the value of the Differential Gain of the PID controller
    * @param None.
    * @return Differential Gain(kd)
    */
   double getkd();
+
+  /**
+   * @brief Function to return the value of previous error for testing purposes
+   * @param None.
+   * @return Previous error value(prevError).
+   */
+  double getPrevError();
 
   /**
    * @brief Function to reset the integral term to zero
