@@ -14,7 +14,7 @@
 
 class ackerman_controller{
  private:
-  double baseline,carLen, radius, rWheelVel,lWheelVel, steerAng;
+  double baseline,carLen, radius, rWheelVel,lWheelVel, steerAng, velocitysp, headingsp;
 
   /**
    * @brief Function to calculate the Radius of the turn given an angle
@@ -28,7 +28,7 @@ class ackerman_controller{
    * brief Function to calculate the wheel velocity of each wheel
    * and the velocity of the overall system
    * Formula : lWheelVel = velocitysp * (1-(baseline/2*radius))
-   * Formula : rWheelVel = veocitysp * (1+(baseline/2*radius))
+   * Formula : rWheelVel = velocitysp * (1+(baseline/2*radius))
    * @param None.
    * @return None.
    */
@@ -40,7 +40,7 @@ class ackerman_controller{
    * @param The feedback about the heading from the PID controller.
    * @return The values of steering angle, the velocity of the right and left wheels.
    */
-  double compute(double headingFeedback);
+  double compute(double headingFeedback, double &rWheelVel, double &lWheelVel);
 
   /**
    * TODO : check the brief
