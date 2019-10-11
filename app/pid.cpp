@@ -66,6 +66,7 @@ double pid::getdt() {
 double pid::getSp() {
 
 }
+
 double pid::getkp() {
 
 }
@@ -74,7 +75,15 @@ double pid::getki() {
 
 }
 
+double pid::getErrorSum(){
+
+}
+
 double pid::getkd() {
+
+}
+
+double pid::getPrevError(){
 
 }
 
