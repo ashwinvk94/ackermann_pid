@@ -2,9 +2,9 @@
  * @file ackermann_controller.hpp
  * @author Ashwin Varghese Kuruttukulam
  * @author Charan Karthikeyan
- * TODO :Change the brief
  * @brief Defines the ackerman controller that calculates the
- * ,Radius of the turn, velocity of each wheel and an
+ * ,Radius of the turn, velocity of each wheel and and the overall
+ * velocity of the vehicle
  * @Copyright "Copyright 2019 <Ashwin Varghese Kuruttukulam>
  * @Copyright "Copyright 2019 <Charan Karthikeyan>
  */

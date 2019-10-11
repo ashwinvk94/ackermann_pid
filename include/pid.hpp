@@ -20,11 +20,18 @@ class pid {
   double setPoint;
  public:
   /**
+   * @brief Destructor for the PID Controller
+   * @param None.
+   * @return None.
+   */
+  ~pid();
+
+  /**
    * @brief Constructor for the PID Controller, Initialize kp to 1, ki and kd to 0.
    * @param None.
    * @return None.
    */
-  void pid();
+  pid();
 
   /**
    * @brief Initialize the pid gain parameters to the parameter values
@@ -33,7 +40,8 @@ class pid {
    * @param kd Differential Gain of PID controller.
    * @return None.
    */
-  void pid(double kp, double ki, double kd);
+  pid(double kp, double ki, double kd);
+
   /**
    * @brief Initialize the pid gain parameters to the parameter values and set the dt mode type
    * dtMode = true means that the user will set the dt value and ensure that the
@@ -45,7 +53,7 @@ class pid {
    * @return None.
    */
 
-  void pid(double kp, double ki, double kd, double dtMode);
+  pid(double kp, double ki, double kd, double dtMode);
 
   /**
    * @brief Destructor for the PID Controller
@@ -62,6 +70,7 @@ class pid {
    * @param feedback Measured state value.
    * @return pidOut Output calculated by the PID controller with the equation.
    */
+
   double compute(double feedback);
 
   /**
