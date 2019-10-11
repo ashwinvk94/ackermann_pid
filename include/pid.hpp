@@ -31,7 +31,7 @@ class pid{
    * @param None.
    * @return NOne
    */
-  pid();
+  pid(double kp, double ki, double kd, bool dtMode);
 
   /**
     * @brief Destructor for the PID Controller
@@ -47,13 +47,7 @@ class pid{
    * @param kd Differential Gain of PID controller.
    * @return None.
    */
-  void pid(double kp, double ki, double kd);
 
-  /**
-   * @brief Function to compute the output of the PID controller as per the equation : ADD EQUATION
-   * @param feedback Measured state value.
-   * @return pidOut Output calculated by the PID controller with the equation.
-   */
   double compute(double feedback);
 
   /**
